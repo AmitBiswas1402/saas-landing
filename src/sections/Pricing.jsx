@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Element } from "react-scroll";
 import { plans } from "../constants";
 import CountUp from "react-countup";
-// import Button from "../components/Button.jsx";
+import { Button } from "../components/Button.jsx";
 
 function Pricing() {
   const [monthly, setMonthly] = useState(false);
@@ -145,7 +145,7 @@ function Pricing() {
                 </ul>
 
                 <div className="mt-10 flex w-full justify-center">
-                  {/* <Button icon={plan.icon}>Get Started</Button> */}
+                  <Button icon={plan.icon}>Get Started</Button>
                 </div>
 
                 {index === 1 && (
