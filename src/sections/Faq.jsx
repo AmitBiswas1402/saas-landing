@@ -1,8 +1,11 @@
 import React from "react";
 import { Element } from "react-scroll";
-import { faq } from "../constants/index.jsx";
+import {faq} from "../constants/index.jsx";
+import FaqItem from "../components/FaqItem.jsx";
 
 const Faq = () => {
+  const halfLength = Math.floor(faq.length / 2);
+
   return (
     <section>
       <Element name="faq" className="relative">
@@ -35,11 +38,11 @@ const Faq = () => {
                 <FaqItem key={item.id} item={item} index={halfLength + index} />
               ))}
             </div>
+
           </div>
 
           <div className="faq-lin_after absolute left-[calc(50%-1px)] top-0 -z-1 h-full w-0.5 bg-s2 max-lg:hidden" />
         </div>
-
       </Element>
     </section>
   );

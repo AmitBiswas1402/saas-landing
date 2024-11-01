@@ -1,5 +1,5 @@
 import React from "react";
-import { details, features } from "../constants";
+import { details, features } from "../constants/index.jsx";
 import { Element } from "react-scroll";
 import { Button } from "../components/Button";
 
